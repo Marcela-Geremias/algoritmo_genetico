@@ -1,0 +1,112 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #6a1b9a; 
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Botões */
+button {
+    background-color: #ab47bc; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #9c27b0; 
+    transform: scale(1.03);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+    background-color: #8e24aa; 
+}
+
+/* Áreas de Resultado */
+#resultArea, #testStatus {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+#lettersOutput, #fitnessOutput, #generationOutput {
+    font-weight: bold;
+    color: #6a1b9a; 
+}
+
+#testStatus {
+    font-weight: bold;
+    color: #ba68c8; 
+}
+
+/* Melhor Resultados */
+#bestResults {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#bestResults p {
+    background-color: #f3e5f5; 
+    padding: 8px;
+    border-radius: 6px;
+    color: #6a1b9a;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+select:hover, select:focus {
+    border-color: #ab47bc; 
+    outline: none;
+}

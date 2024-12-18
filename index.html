@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo Genético - Criptoaritmética</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Algoritmo Genético - Criptoaritmética</h1>
+
+        <!-- Execução Automática -->
+        <h2>Execução Automática</h2>
+        <button id="runFixedConfig">Executar SEND + MORE = MONEY</button>
+
+        <!-- Configuração Manual -->
+        <h2>Configurar Manualmente</h2>
+        <form id="manualConfigForm">
+            <label for="problemSelect">Escolha o Problema:</label>
+            <select id="problemSelect">
+                <option value="PARA+AMAPA=GOIAS">PARA + AMAPA = GOIAS</option>
+                <option value="CROSS+ROADS=DANGER">CROSS + ROADS = DANGER</option>
+                <option value="SEND+MORE=MONEY" selected>SEND + MORE = MONEY</option>
+                <option value="EAT+THAT=APPLE">EAT + THAT = APPLE</option>
+                <option value="DONALD+GERALD=ROBERT">DONALD + GERALD = ROBERT</option>
+                <option value="COCA+COLA=OASIS">COCA + COLA = OASIS</option>
+            </select>
+
+            <label for="populationSize">Tamanho da População:</label>
+            <select id="populationSize">
+                <option value="100">100</option>
+                <option value="200" selected>200</option>
+                <option value="300">300</option>
+            </select>
+
+            <label for="maxGenerations">Máximo de Gerações:</label>
+            <select id="maxGenerations">
+                <option value="30">30</option>
+                <option value="50" selected>50</option>
+                <option value="100">100</option>
+            </select>
+
+            <label for="crossoverRate">Taxa de Crossover:</label>
+            <select id="crossoverRate">
+                <option value="0.6">0.6</option>
+                <option value="0.8" selected>0.8</option>
+            </select>
+
+            <label for="mutationRate">Taxa de Mutação:</label>
+            <select id="mutationRate">
+                <option value="0.05">0.05</option>
+                <option value="0.1" selected>0.1</option>
+            </select>
+
+            <button type="button" id="runManualConfig">Executar Configuração Manual</button>
+        </form>
+
+        <!-- Resultado -->
+        <h2>Resultado</h2>
+        <div id="resultArea">
+            <p><strong>Geração:</strong> <span id="generationOutput">-</span></p>
+            <p><strong>Valores das Letras:</strong> <span id="lettersOutput">-</span></p>
+            <p><strong>Fitness:</strong> <span id="fitnessOutput">-</span></p>
+        </div>
+
+        <!-- Testes 24 Combinações -->
+        <h2>Teste Completo</h2>
+        <button id="runAllTests">Executar 24 Combinações (1000 Execuções)</button>
+        <p id="testStatus">Status: Aguardando...</p>
+
+        <!-- Melhores Resultados -->
+        <h2>4 Melhores Combinações</h2>
+        <div id="bestResults"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
